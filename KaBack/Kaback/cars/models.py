@@ -13,4 +13,4 @@ class Car(models.Model):
     Combustible =  models.CharField(max_length=100)
     Pasajeros =  models.IntegerField()
     Estado = models.CharField(max_length= 100)
-    Extras = models.CharDield ( max_length = 1000)
+    Extras = models.CharField ( max_length = 1000)
