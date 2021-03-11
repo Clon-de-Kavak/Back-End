@@ -19,6 +19,8 @@ from cars import views as cars_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-      path('hola-mundo/', cars_views.hola_mundo, name="hola_mundo")
+  	path('hola-mundo/', cars_views.hola_mundo, name="hola_mundo"),
+	path('cars/',  cars_views.qryAll, name="qryAll"),
+	path('cars/<int:carId>', cars_views.qryId, name="qryId")
 ]
 
