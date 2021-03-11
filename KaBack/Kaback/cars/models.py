@@ -14,3 +14,6 @@ class Car(models.Model):
     Pasajeros =  models.IntegerField()
     Estado = models.CharField(max_length= 100)
     Extras = models.CharField ( max_length = 1000)
+
+#Mario_uwu
+#1234mario
