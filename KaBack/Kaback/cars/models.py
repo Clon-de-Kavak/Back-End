@@ -1,8 +1,7 @@
 from django.db import models
-
 # Create your models here.
 class Car(models.Model):
-    Precio =models.DecimalField(max_digits=6, decimal_places=2)
+    Precio = models.DecimalField(max_digits=12, decimal_places=2)
     Modelo = models.CharField(max_length=100)
     Marca = models.CharField(max_length=100)
     Km = models.IntegerField()
