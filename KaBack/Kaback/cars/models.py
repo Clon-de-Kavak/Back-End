@@ -6,7 +6,7 @@ class Car(models.Model):
     Marca = models.CharField(max_length=100)
     Km = models.IntegerField()
     Ciudad =models.CharField(max_length=100)
-    Transimisión = models.CharField(max_length=100)
+    Transmision = models.CharField(max_length=100)
     Tipo_auto = models.CharField(max_length=100)
     Color =  models.CharField(max_length=10)
     Combustible =  models.CharField(max_length=100)

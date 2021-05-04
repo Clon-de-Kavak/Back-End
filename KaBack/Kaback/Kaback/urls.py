@@ -17,11 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from cars import views as cars_views
 from .router import car_router
+from .router import user_router
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
   	path('hola-mundo/', cars_views.hola_mundo, name="hola_mundo"),
-    path('api/',include(car_router.urls))
+    path('api/',include(car_router.urls)),
+    path('userapi/', include(user_router.urls)),
+    path('api/token', TokenObtainPairView.as_view()),
+    path('api/token/refresh', TokenRefreshView.as_view())
 ]
 
 ###	path('cars/',  cars_views.qryAll, name="qryAll"),
